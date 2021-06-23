@@ -5,11 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heading Elements</title>
-</head>
-<header>Tiu tech<nav><index class="html"></index></nav>
+    <style>
+      /* all li elements */
+      li {
+        color: white;
+        text-align: match-parent;
+      }
+      section {
+        color: white;
+        font-weight: bold;
+      }
+
+      /* all with class="highlight" */
+      .highlight {
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        color: gray;
+        opacity: .6;
+      }
+      section > article {
+        color: blanchedalmond;
+        font-size: 18px;
+      }
+      a > div {
+        color: red;
+        font-size: 18px;
+      }
+
+      /* element with id="mainPoint" */
+      #mainPoint {
+        font-size: 24px;
+        font-weight: bold;
+        color: black;
+        background-color: white;
+        opacity: .7;
+        text-align: right;
+      }
+      p {
+        color: rgb(250, 250, 250);
+        font-size: 20px;
+        width: 1200px;
+        background-color: black;
+        opacity: .5;
+        text-align: center;
+      
+      }
+      
+      h1 {
+        color: yellow;
+        font-size: 36px;
+        text-align: center;
+      }
+      footer {
+        color: white;
+        font-size: 18px;
+        font-weight: bolder;
+        text-align: right;
+      }
+      body {
+        background-image: url("fundo.jpg");
+      }
+      </style>
+  </head>
+<header>Pagina teste<nav><index class="html"></index></nav>
 </header>
-<h1>Principal heading da pagina!!!!</h1>
-<section>
+<h1>Principal heading da pagina!!h1!!</h1>
+<section class="highlight">
     Section 1 
     <article>Alguma coisa da section1</article>
     <article>Mais alguma coisa da section1</article>
@@ -50,13 +112,13 @@
     <p>
         <img src="https://images.wallpapersden.com/image/download/diablo-2-resurrected_bGtoaWeUmZqaraWkpJRraWWtaW1l.jpg" width="640" height="480">
         </p>
-    <p>
+    <h2 id="mainPoint">
       Let's link to Google search page.
       <!-- link to Google page WITH TARGET another tab-->
       <a href="http://www.google.com" 
       target="_blank" title="Search something">search Page</a>
-    </p>
+    </h2>
   </section>
-<aside>Mais alguma informacao correlata ao main topic</aside>
+<aside class="highlight">Mais alguma informacao correlata ao main topic</aside>
 <footer>aqui eh o pe da pagina  Tiu TECH &copy; 2021</footer>
 </html>
